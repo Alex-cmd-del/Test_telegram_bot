@@ -23,6 +23,8 @@ def send_echo(message):
 
 	else:
 		answer += "На улице жарко, шорты и футболка!"
+
+	bot.send_message(message.chat.id, answer)
 	
 
 bot.polling( none_stop = True)
